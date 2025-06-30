@@ -1,0 +1,152 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.glass-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(1, 78, 109, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image svg {
+    width: 120px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: #f5f5f5;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #014e6d;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.waitlist-form {
+    display: flex;
+    gap: 10px;
+}
+
+.waitlist-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary-large {
+    background: #014e6d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Features */
+.features {
+    padding: 60px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2273c2;
+}
+
+/* About */
+.about {
+    background: #f9fafb;
+    padding: 60px 0;
+}
+
+/* FAQ */
+.faq {
+    padding: 60px 0;
+}
+
+.faq-item + .faq-item {
+    margin-top: 20px;
+}
+
+/* Footer */
+.site-footer {
+    background: #014e6d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-footer img {
+    width: 80px;
+    margin-top: 10px;
+}
